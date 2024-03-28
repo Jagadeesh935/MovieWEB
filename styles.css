@@ -1,0 +1,200 @@
+body {
+	width: 100%;
+}
+
+.navbar {
+	background-color: yellow;
+	font-weight: bold;
+}
+
+.title-tx {
+	font-size: 0.9rem;
+	display: block;
+}
+
+#header {
+	width: 100%;
+}
+
+.banner {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+.banner img {
+	width: 100%;
+	position: absolute;
+	top: -10rem;
+}
+
+
+
+#navbarSupportedContent>ul>li {
+	margin: 0px 20px 0px 20px;
+}
+
+#hero, #footer {
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+}
+
+.main-flex-item {
+	width: 2000px;
+}
+
+.hero-title {
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+	background-color: yellow;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+	border-radius: 20px;
+}
+
+.hero-title>div:nth-child(2) {
+	font-weight: normal;
+}
+
+.now-showing {
+	font-size: 1.5rem;
+	margin-top: 4rem;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: center;
+	gap: 50px;
+}
+
+.grid-item {
+	width: 100%;
+	height: 13rem;
+	background: red;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px 0px;
+}
+
+.grid-item:nth-child(2n-1) {
+	background: green;
+}
+
+.grid-item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 30px;
+	padding: 30px;
+}
+
+.grid-item > .img {
+	width: 10rem;
+	height: 10rem;
+	background: yellow;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.grid-item > .words {
+	font-size: 3rem;
+	color: white;
+	font-weight: bold;
+}
+
+.img > img {
+	position: absolute;
+}
+
+.lover > img {
+	height: 10rem;
+	left: -2rem;
+}
+
+.bluestar > img {
+	height: 16rem;
+}
+
+.goat > img {
+	height: 15rem;
+	top: -2rem;
+}
+
+.reble > img {
+	height: 16.5rem;
+	top: -1.5rem;
+}
+
+.panda > img {
+	height: 16rem;
+	top: -2rem;
+}
+
+.premalu > img {
+	height: 12.5rem;
+	top: -2rem;
+}
+
+.short-word {
+	display: block; font-size : .8rem;
+	font-weight: normal;
+	font-size: .8rem;
+}
+
+#footer {
+	background: yellow;
+}
+
+#footer > .main-flex-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.iconFlex {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+.line {
+	display: flex;
+	width:100%;
+	justify-content: center;
+}
+
+.line > div {
+	flex-basis: 50%;
+}
+
+.copywrite {
+	text-align: center;
+	color: grey;
+}
+
+.grid-item:hover {
+	transition-duration: 0.5s;
+	scale: 110%;
+}
+
+
+
+
+
+@media (max-width:1400px) {
+	.grid-container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width:990px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+	}
+}
